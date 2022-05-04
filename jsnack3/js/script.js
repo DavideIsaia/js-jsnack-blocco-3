@@ -3,35 +3,35 @@
 // creo l'array di oggetti
 let squadre = [
     {
-        nome : "Juventus",
-        puntiFatti : 0,
-        falliSubiti : 0
+        nome: "Juventus",
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
-        nome : "Milan",
-        puntiFatti : 0,
-        falliSubiti : 0
+        nome: "Milan",
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
-        nome : "Inter",
-        puntiFatti : 0,
-        falliSubiti : 0
+        nome: "Inter",
+        puntiFatti: 0,
+        falliSubiti: 0
     },
     {
-        nome : "Real Boolean",
-        puntiFatti : 0,
-        falliSubiti : 0
+        nome: "Real Boolean",
+        puntiFatti: 0,
+        falliSubiti: 0
     }
 ]
 
 console.log("array originale", squadre);
 
 // la funzione sostituisce i valori all'interno degli oggetti
-squadre = squadre.map(function() {
+squadre = squadre.map(function(squadra) {
     return {
-        nome : `${squadre.nome}`,
+        nome: squadra.nome,
         puntiFatti: randomNumber1to100(), 
-        falliSubiti : randomNumber1to100()
+        falliSubiti: randomNumber1to100()
     };
 });
 
