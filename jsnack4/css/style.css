@@ -7,3 +7,18 @@
 html {
     background-color: #1b1d31;
 }
+
+div {
+    margin: 5rem auto;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+#red {
+    color: red;    
+}
+
+#green {
+    color: green;
+}
