@@ -13,6 +13,14 @@ do {
 console.log(numbArray);
 $('#array').innerHTML = numbArray;
 
+numbArray.forEach(element => {
+    if (element % 2 === 0) {
+        $('#green').innerHTML += element + " ";
+    } else {
+        $('#red').innerHTML += element + " ";
+    }
+});
+
 // la funzione genera un numero da 1 a 100 e lo dà come output.
 function randomNumber1to100 () {
     return Math.floor(Math.random() *100) +1;
